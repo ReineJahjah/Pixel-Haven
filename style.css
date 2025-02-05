@@ -1,0 +1,671 @@
+*{
+    color: aliceblue;
+    background-color:rgb(33, 32, 32);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style:none;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    height:730px;
+    width:100%;
+}
+header .image-container img{
+    z-index: -1;
+    height:730px;
+    width:100%;
+}
+header .home-text{
+    position: absolute;
+    top:30%;
+    left:15%;
+    background: transparent;
+}
+header .home-text h1{
+    font-size:50px;
+    letter-spacing: 4px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(196, 33, 33);
+    color:#fac915;
+    padding:15px;
+    border:2px solid rgb(247, 238, 3);
+    border-radius: 6%;
+    cursor:cell;
+    margin-bottom: 0px;
+    animation:bounceIn 1.4s forwards;
+}
+header .home-text h1 span{
+    color: black;
+}
+
+header .home-text h3{
+    background: transparent;
+    padding-left: 16px;
+    cursor:crosshair;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation:bounceIn 1.4s forwards;
+}
+
+@keyframes bounceIn{
+    0%{
+        transform:translateX(-100%);
+        opacity: 0;
+    }
+    60%{
+        transform:translateX(30%);
+        opacity: 1;
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+
+article .heading{
+    display:flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+article .heading .fi{
+    font-size: 21px;
+    color:red;
+    background: transparent;
+    padding:10px;
+    padding-right:0px;
+    border-radius: 5rem;
+    cursor: cell;
+}
+article .heading h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: cell;
+}
+
+
+article .trending{
+    margin:0 0 0 50px;
+    width:1300px;
+    height:250px;
+    display:flex;
+    flex:1;
+    justify-content:center;
+    gap:10px;
+}
+
+
+article .trending .cont{
+    height: 100%;
+    flex:1;
+    object-fit:cover;
+    border-radius: 10px;
+    border:0px solid rgba(255, 255, 255, 0.684);
+    transition:all ease-in-out 0.5s;
+    flex-shrink: 0;
+}
+article .trending .cont a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+article .trending .cont a img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+article .trending .cont:hover{
+    flex-grow:1.5;
+    cursor: pointer;
+    
+}
+
+
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.copyright a{
+    all:unset;
+    cursor: pointer;
+    color:#fac915;
+    background-color: red;
+    border:1px solid #fac915;
+    border-radius: 7%;
+    margin-right: 980px;
+    padding: 5px 5px;
+    font-family:fantasy;
+}
+.copyright a span{
+    color:#1b182b;
+}
+.copyright p{
+    font-size: 0.9rem;
+
+}
+
+.chat{
+    bottom:10px;
+    right:30px;
+    position:fixed;
+
+    height:50px;
+    width:50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 30%;
+
+
+    border:2px solid #FFFFFF75;
+    border-right: 2px solid #FFFFFF75;
+    box-shadow:5px 5px 12px #00000035;
+    background: #FFFFFF25;
+    overflow: hidden;
+    backdrop-filter: blur(3px);
+    transition: 0.3s;
+}
+.chat .ico{
+    height: 50px;
+    width:50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 11px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.chat .ico .fi{
+    border-radius: 50%;
+    color:red;
+    font-size: 20px;
+    transition:0.3s;
+}
+.chat .ico .fi:hover{
+    cursor:pointer;
+    color:#fac915;
+}
+.chat:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.clickedchat{
+    display: none;
+    position:fixed;
+    top:150px;
+    right:580px;
+    width: 350px;
+    height:500px;
+    border-radius: 0.5rem;
+    padding:10px;
+    color:white;
+    background-color: rgb(37, 48, 67);
+    z-index: 1000;
+    
+    cursor: default;
+    
+}
+
+.clickedchat .profile{
+    background-color: transparent;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.clickedchat .profile .infor .usernamedisplay{
+    background-color: transparent;
+    color:white;
+    padding:0 0 0 20px;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0px;
+}
+.clickedchat .profile img{
+    height: 70px;
+    width:70px;
+    border-radius:15px;
+    margin-top:10px;
+    margin-left:5px;
+}
+.clickedchat .profile .infor{
+    display: flex;
+    flex-direction: column;
+    padding:0px;
+    background-color: transparent;
+}
+.clickedchat .profile .infor select{
+    border:0;
+    padding:0px 0px 0px 17px;
+    margin:0px;
+    background-color: transparent;
+    color:aqua;
+    cursor: pointer;
+}
+.clickedchat .profile .infor select option{
+    background-color: rgb(22, 29, 40);
+    border:0px;
+}
+.clickedchat .profile .infor select option:hover{
+    color:#fa5353;
+}
+.clickedchat hr{
+    width:320px;
+    border-color:grey;
+    margin:2px 0 0 0;
+}
+.clickedchat .drag{
+    color:aqua;
+    border:1px dashed aqua;
+    margin:7px 0 7px 20px;
+    padding:2px 0 2px 0;
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+    width:280px;
+    justify-content: center;
+}
+.clickedchat .frie{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+.clickedchat .frie p, input, label .fi, .fi{
+    background-color: transparent;
+    padding:6px;
+    color:aqua;
+}
+.clickedchat .frie input{
+    height:25px;
+    width:200px;
+    margin-top:20px;
+}
+.clickedchat .frie .fi{
+    padding-top:22px;
+}
+.clickedchat .frie label{
+    padding-top:22px;
+    background-color: transparent;
+}
+.clickedchat .frie label:hover{
+    color:#fac915;
+    cursor: pointer;
+}
+.clickedchat .frie .fi:hover{
+    color:#fac915;
+    cursor: pointer;
+}
+.clickedchat .frie input{
+    border-radius: 20px;
+}
+
+.clickedchat .online{
+    background-color: transparent;
+}
+.clickedchat .someone{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border-radius: 5px;
+    padding:5px 0 5px 0;
+    cursor:default;
+    transition: 0.3s;
+}
+.clickedchat .someone:hover{
+    background-color: grey;
+}
+.clickedchat .someone img{
+    height: 50px;
+    width:50px;
+    border-radius:15px;
+    margin:0 10px 0 5px;
+    
+}
+.clickedchat .someone .disp{
+    background-color: transparent;
+}
+.clickedchat .someone .disp .information{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    font-size: large;
+    margin-top:5px;
+}
+.clickedchat .someone .disp .information .usernamedisplay{
+    background-color: transparent;
+    margin:0px;
+    color:greenyellow;
+}
+.clickedchat .someone .disp .information span{
+    background-color: transparent;
+    margin-top:0px;
+    color:greenyellow;
+    cursor: pointer;
+}
+
+.clickedchat .someone .disp .level{
+    background-color: transparent;
+    font-size:small;
+}
+.clickedchat .clickedmore{
+    display:none;
+    position: fixed;
+    background-color: rgb(51, 68, 98);
+    right: 555px;
+    top:417px;
+    z-index: 1000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.clickedchat .clickedmore p{
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(186, 185, 185);
+    padding:3px;
+    border-radius: 5px;
+}
+.clickedchat .clickedmore p:hover{
+    background-color: rgb(86, 111, 154);
+    color:aliceblue
+}
+
+.clickedchat .someone2{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border-radius: 5px;
+    padding:5px 0 5px 0;
+    cursor:default;
+    filter:brightness(0.5);
+    transition: 0.3s;
+}
+.clickedchat .someone2:hover{
+    background-color: grey;
+    filter:brightness(1.2);
+}
+.clickedchat .someone2 img{
+    height: 50px;
+    width:50px;
+    border-radius:15px;
+    margin:0 10px 0 5px;
+    
+}
+.clickedchat .someone2 .disp{
+    background-color: transparent;
+}
+.clickedchat .someone2 .disp .information{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    font-size: large;
+    margin-top:5px;
+}
+.clickedchat .someone2 .disp .information .usernamedisplay{
+    background-color: transparent;
+    margin:0px;
+    color:greenyellow;
+}
+.clickedchat .someone2 .disp .information span{
+    background-color: transparent;
+    margin-top:0px;
+    color:greenyellow;
+    cursor: pointer;
+}
+
+.clickedchat .someone2 .disp .level{
+    background-color: transparent;
+    font-size:small;
+}
+
+.clickedchat .clickedmore2{
+    display:none;
+    position: fixed;
+    background-color: rgb(51, 68, 98);
+    right: 564px;
+    top:526px;
+    z-index: 1000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.clickedchat .clickedmore2 p{
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(186, 185, 185);
+    padding:3px;
+    border-radius: 5px;
+}
+.clickedchat .clickedmore2 p:hover{
+    background-color: rgb(86, 111, 154);
+    color:aliceblue;
+    filter:brightness(1);
+}
+
+.clickedchat .footer{
+    background-color: transparent;
+    height: 53px;
+    align-items: center;
+    text-align: center;
+    font-size:35px;
+    margin-top:30px;
+    border:0px solid ;
+    border-radius: 7px;
+}
+.clickedchat .footer abbr{
+    background-color: transparent;
+    all:unset;
+}
+.clickedchat .footer abbr .fi{
+    margin:0 20px 0 20px;
+    background-color: transparent;
+    color:rgb(128, 214, 15) ;
+    cursor: pointer;
+}
+.clickedchat .footer .close abbr{
+    background-color: transparent;
+    all:unset;
+}
+.clickedchat .footer .close abbr .fi{
+    margin:0 20px 0 20px;
+    background-color: transparent;
+    color:rgb(128, 214, 15) ;
+    cursor: pointer;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    margin-top:30px;
+    padding-left:70px;
+    padding-right: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor:default;
+}
+footer .top{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between !important;
+    background-color: transparent;
+}
+footer .top .first{
+    background-color: transparent;
+}
+footer .top .first .logo{
+    background-color: transparent;
+}
+footer .top .first .logo img{
+    height: 30px;
+    width: 30px;
+    float:left;
+    margin: 0 10px 0 10px;
+    background-color: transparent;
+}
+footer .top .first .logo h1{
+    color:#fac915;
+    background-color: transparent;
+    font-size: x-large;
+}
+footer .top .first .about{
+    background-color: transparent;
+}
+footer .top .first .about h3{
+    color:#fac915;
+    font-size: medium;
+    margin-bottom: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+footer .top .first .about h3:hover{
+    filter:brightness(1.3);
+}
+footer .top .first .about span{
+    color:aliceblue;
+    font-size:small;
+    letter-spacing: 0.5px;
+    filter:brightness(0.4);
+
+}
+footer .top .first .contact{
+    background-color: transparent;
+}
+footer .top .first .contact h4{
+    color:#fac915;
+    font-size: medium;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+footer .top .first .contact .fi{
+    color:#fac915;
+    font-size: small;
+    cursor: pointer;
+}
+footer .top .first .contact a{
+    all:unset;
+    margin-bottom:2px;
+    color:rgb(191, 191, 191);
+    font-size: small;
+    cursor: pointer;
+}
+footer .top .first .contact a:hover, .fi:hover{
+    color:aliceblue;
+}
+footer .top .second{
+    background-color: transparent;
+}
+footer .top .second h2{
+    background-color: transparent;
+    color:#fac915;
+    font-size: medium;
+    margin-bottom: 10px;
+    margin-bottom: 0px;
+}
+footer .top .second span{
+    font-size: small;
+    letter-spacing: 0.5px;
+    color: rgb(191, 191, 191);
+    cursor: pointer;
+}
+footer .top .second span:hover{
+    color:aliceblue;
+}
+footer .top .fourth{
+    background-color: transparent;
+}
+footer .top .fourth h3{
+    background-color: transparent;
+    color:#fac915;
+    font-size: medium;
+    margin-bottom: 10px;
+    padding-left:6px;
+}
+footer .top .fourth form{
+    background-color: transparent;
+}
+footer .top .fourth form input{
+    background-color: azure;
+    border-radius: 6px;
+    border:0px;
+    margin:5px;
+    padding:10px;
+    color:#1b182b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 35px;
+    width:230px;
+}
+footer .top .fourth form .subm{
+    height: 35px;
+    width:80px;
+    background-color: #fac915;
+    cursor: pointer;
+}
+footer hr{
+    width:100%;
+    filter:brightness(1.5);
+    color:aliceblue
+}
+footer .bott{
+    display:flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+footer .bott .social{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-left:535px;
+}
+footer .bott .social .fi{
+    color:rgb(26, 22, 22);
+    background-color: #ebb800;
+    font-size:20px;
+    height:40px;
+    width:40px;
+    display:grid;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: 0.3s;
+    align-items: center;
+    text-align: center !important;
+    margin:10px;
+}
+footer .bott .social .a:hover{
+    color:white;
+    background-color: rgb(61, 175, 246);
+}
+footer .bott .social .b:hover{
+    color:black;
+    background-color: white;
+}
+footer .bott .social .c:hover{
+    color:white;
+    background: linear-gradient(to bottom right, purple, rgb(255, 109, 133), yellow);
+}
+footer .bott .social .d:hover{
+    color:white;
+    background: linear-gradient(to bottom right, rgb(50, 50, 237), rgb(15, 206, 15),rgb(247, 26, 26));
+}
+footer .bott .copyright{
+    background-color: transparent;
+}
+footer .bott .copyright p{
+    background-color: transparent;
+    color:rgb(110, 108, 108);
+    padding-left:0px;
+    margin-left:260px;
+    margin-top:0px;
+}

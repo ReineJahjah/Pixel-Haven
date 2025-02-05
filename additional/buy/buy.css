@@ -1,0 +1,108 @@
+*{
+    color: aliceblue;
+    background-color:#00296b;
+    scroll-behavior: smooth;
+}
+body{
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start !important;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow-x:hidden;
+}
+.info{
+    border:2px solid #ffd500;
+    border-radius: 3%;
+    height:720px;
+    width:40%;
+    margin-right: 10px;
+    background-color: #003f88;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right:20px;
+}
+
+.info h1{
+    font-size: 35px;
+    background-color: transparent;
+    color:#ffd500;
+}
+label{
+    font-size: 20px;
+    background-color: transparent;
+    margin:1px;
+    
+}
+input{
+    background:transparent;
+    border:1px solid #ffd500;
+    border-radius:5px;
+    height: 25px;
+    width:120px;
+    margin:8px 0px;
+    color:#ffd500
+}
+select{
+    background:transparent;
+    border:1px solid #ffd500;
+    border-radius:5px;
+    height: 30px;
+    width:120px;
+    color:#ffd500
+}
+.p{
+    background: transparent;
+}
+button{
+    background-color: #00296b;
+    color: #ffd500;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-top: 14px;
+    padding:10px;
+}
+button:hover{
+    background-color:#ffd500;
+    color:#003f88;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-top: 14px;
+    padding:10px;
+}
+.cards{
+    border:2px solid #ffd500;
+    border-radius:5%;
+    height:300px;
+    width:25%;
+    background-color:#003f88;
+    padding-left: 10px;
+}
+.cards h1{
+    background-color: transparent;
+    color:#ffd500;
+    
+}
+.cards span{
+    background-color: transparent;
+    font-size: larger;
+    color:rgb(190, 176, 176);
+    
+    margin-bottom: 5px;
+}
+.cart{
+    margin-top:5px;
+    background: transparent;
+}
+.cart img{
+    height:40px;
+    width:60px;
+    background: white;
+    border-radius: 9px;
+}
+.cards p{
+    background-color: transparent;
+
+}

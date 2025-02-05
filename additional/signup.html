@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PixelHaven|SignUp</title>
+        <link rel="stylesheet" href="../navstyle.css">
+        <link rel="stylesheet" href="logsign.css">
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+        <link rel="shotcut icon" href="pics/icon.png" type="image/x-icon">
+    </head>
+    <body>
+        <nav>
+            <div class="menu">
+                <a href="../main.html"><img src="../pics/icon.png"></a>
+                <a href="#" class="link"><p>Pixel<span>Haven</span></p></a>
+                 <span class="link2" onclick="clickedgames()">Games</span>
+                <a href="signin.html" class="link2">Signin</a>
+                <span class="link2" onclick="clickedmore3()">More</span>
+            </div>
+
+            <div class="clickedgames" id="clickedgames">
+                <div class="choice">
+                    <p><a href="../main.html">Home</a></p>
+                    
+                    <p><a href="allgames.html">All Games</a></p>
+                </div>
+            </div>
+            <div class="clickedmore3" id="clickedmore3">
+                <div class="choice">
+                    <p>Featured</p>
+                    <p>Wishlist</p>
+                    <p>News</p>
+                    <p>Stats</p>
+                </div>
+            </div>
+            
+            
+            <div class="icons">
+                <span class="notification"  onclick="clickedotification()">
+                    <i class="fi fi-rs-bell-notification-social-media" id="bell-icon"></i>
+                </span>
+                <span class="downloads" onclick="toggledownloads()">
+                    <i class="fi fi-rr-down-to-line" id="download-icon"></i>
+                </span>
+            </div>
+
+            <div class="clickednotification" id="clickednotification">
+                <div class="notification-box">
+                    <i class="fi fi-rr-check-circle"></i>
+                    <p>Congratulation, Your game download successfully.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class="fi fi-rs-circle-xmark"></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
+        </nav>
+
+        <video autoplay muted loop class="bg-video">
+            <source src="video/video1.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+            <form>
+                <h1>Sign Up</h1>
+                <div class="intro">
+                    <h2>Create your <span>PixelHaven</span> Account</h2>
+                    <span>Use one of your existing accounts below, or start<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        from the beginning</span>
+                </div>
+                <div class="icons">
+                    <i class="fi fi-brands-facebook facebook"></i>
+                    <i class="fi fi-brands-apple apple"></i>
+                    <i class="fi fi-brands-twitter-alt twitter"></i>
+                    <i class="fi fi-brands-google google"></i>
+                </div>
+                <span>OR</span>
+                <div class="content">
+                    <div class="name">
+                        <label>username</label><br>
+                        <input type="text" required>
+                    </div>
+                    <div class="email">
+                        <label>e-mail</label><br>
+                        <input type="email" required>
+                    </div>
+                    <div class="pass">
+                        <label>password</label><br>
+                        <input type="password" required>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button>submit</button>
+                </div>
+                <div class="illus">
+                    <p>Already have an account?</p>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </form>
+        </div>
+
+        <script src="allgames.js"></script>
+
+    </body>
+</html>

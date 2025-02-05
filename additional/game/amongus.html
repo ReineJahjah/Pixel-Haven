@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PixelHaven</title>
+        <link rel="stylesheet" href="../../navstyle.css">
+        <link rel="stylesheet" href="games.css">
+        <link rel="stylesheet" href="">
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-chubby/css/uicons-solid-chubby.css'>
+        <link rel="shotcut icon" href="../pics/icon.png" type="image/x-icon">
+    </head>
+    <body>
+        <nav>
+            <div class="menu">
+                <a href="../../main.html"><img src="../../pics/icon.png"></a>
+                <a href="../../main.html" class="link"><p>Pixel<span>Haven</span></p></a>
+                 <span class="link2" onclick="clickedgames()">Games</span>
+                <a href="../signin.html" class="link2">Signin</a>
+                <span class="link2" onclick="clickedmore3()">More</span>
+            </div>
+
+            <div class="clickedgames" id="clickedgames">
+                <div class="choice">
+                    <p><a href="../../main.html">Home</a></p>
+                    
+                    <p><a href="../allgames.html">All Games</a></p>
+                </div>
+            </div>
+            <div class="clickedmore3" id="clickedmore3">
+                <div class="choice">
+                    <p>Featured</p>
+                    <p>Wishlist</p>
+                    <p>News</p>
+                    <p>Stats</p>
+                </div>
+            </div>
+            
+            
+            <div class="icons">
+                <span class="notification"  onclick="clickedotification()">
+                    <i class="fi fi-rs-bell-notification-social-media" id="bell-icon"></i>
+                </span>
+                <span class="downloads" onclick="toggledownloads()">
+                    <i class="fi fi-rr-down-to-line" id="download-icon"></i>
+                </span>
+            </div>
+
+            <div class="clickednotification" id="clickednotification">
+                <div class="notification-box">
+                    <i class="fi fi-rr-check-circle"></i>
+                    <p>Congratulation, Your game download successfully.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class="fi fi-rs-circle-xmark"></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="first">
+            <div class="left">
+                <h1>Among Us</h1>
+                <video controls="controls" poster="../posters/amongus.jpg">
+                    <source src="videos/amongus.mp4">
+                </video>
+                <a href="../buy/buy.html">
+                    <button>Buy</button>
+                </a>
+                <button>Add to your wishlist</button>
+            </div>
+            <div class="right">
+                <img src="../posters/amongus-2.png">
+                <span>An online and local party game of teamwork and betrayal for 4-15 players...in space!</span><br>
+                <span class="review">RECENT REVIEWS: <span class="yellow">Very Positive (2,674)</span></span><br>
+                <span class="review">ALL REVIEWS: <span class="yellow">Very Positive (611,039)</span><br><br>
+                <span class="review">RELEASE DATE: <span class="yellow">16 Nov, 2018</span><br><br>
+                <span class="review">DEVELOPER: <span class="yellow">Innersloth</span><br>
+                <span class="review">PUBLISHER: <span class="yellow">Innersloth</span><br>
+                <span class="review">Popular user-defined tags for this product:</span><br>
+                <button>Multiplayer</button>
+                <button>Online Co-Op</button>
+                <button>Social Deducation</button>
+                <button>2D</button>
+            </div>
+        </div>
+        <div class="description">
+            <h1>About this game</h1>
+            <hr>
+            <span>
+                Play with 4-15 player online or via local WiFi as you attempt to prepare your spaceship for departure, but beware as one or more random players among the Crew are Impostors bent on killing everyone!
+            </span><br><br>
+            <span>
+                Originally created as a party game, we recommend playing with friends at a LAN party or online using voice chat. Enjoy cross-platform play between Android, iOS, PC, and console.
+            </span><br>
+            <img src="../pics/among-us1.png"><br>
+            <h2>Fill Group Task Bar or Discover the Imposter!</h2>
+            <ul>
+                <li><i class="fi fi-sc-star"></i> Win by completing tasks to prepare the ship or ejecting all Impostors.</li>
+                <li><i class="fi fi-sc-star"></i> React quickly to undo the Impostor's sabotages.</li>
+                <li><i class="fi fi-sc-star"></i> Check the Admin map and Security cameras to keep tabs on other Crewmates.</li>
+                <li><i class="fi fi-sc-star"></i> Report any dead bodies immediately to start discussion of who the suspected Impostor is.</li>
+                <li><i class="fi fi-sc-star"></i> Call emergency meetings to discuss suspicious behavior.</li>
+                <li><i class="fi fi-sc-star"></i> Vote to eject suspected Impostors.</li>
+            </ul>
+
+            <h2>Objective: Kill off the Crew</h2>
+            <ul>
+                <li><i class="fi fi-sc-star"></i> Kill Crewmates and frame bystanders.</li>
+                <li><i class="fi fi-sc-star"></i> Pretend to run tasks to blend in with the crewmates.</li>
+                <li><i class="fi fi-sc-star"></i> Pretend to run tasks to blend in with the crewmates</li>
+                <li><i class="fi fi-sc-star"></i> Use sabotages to cause chaos and divide the crew.</li>
+                <li><i class="fi fi-sc-star"></i> Close doors to trap victims and kill in private.</li>
+            </ul>
+
+            <h2>Features:</h2>
+            <ul>
+                <li><i class="fi fi-sc-star"></i> Customization: Pick your color, hat, visor, skin, and pet.</li>
+                <li><i class="fi fi-sc-star"></i> Lots of game options: Add more Impostors, more tasks, different roles, and so much more!</li>
+                <li><i class="fi fi-sc-star"></i> Different modes to choose from: Classic or Hide n Seek.</li>
+                <li><i class="fi fi-sc-star"></i> 4 different maps to play in: The Skeld, MIRA HQ, Polus, and the Airship.</li>
+                <li><i class="fi fi-sc-star"></i> Quickly find a game online from the host list.</li>
+                <li><i class="fi fi-sc-star"></i> In-game text chat</li>
+                <li><i class="fi fi-sc-star"></i> Rich Discord integration.</li>
+                <li><i class="fi fi-sc-star"></i> Cross-platform play between PC, console, Android, and iOS!</li>
+            </ul>
+        </div>
+        <div class="req-box">
+            <h2>SYSTEM REQUIREMENTS:</h2>
+            <hr>
+            <div class="req">
+                <div class="min">
+                    <h3>MINIMUM:</h3>
+                    <span>OS: <span class="gray">Windows 10 x32bit</span></span><br>
+                    <span>Processor: <span class="gray">INTEL i3-4330</span></span><br>
+                    <span>Memory: <span class="gray">1 GB RAM</span></span><br>
+                    <span>Graphics: <span class="gray">INTEL HD Graphics 4600</span></span><br>
+                </div>
+                <div class="rec">
+                    <h3>RECOMMENDED:</h3>
+                    <span>OS: <span class="gray">Windows 10 x64bit</span></span><br>
+                    <span>Processor: <span class="gray">INTEL i3-4330</span></span><br>
+                    <span>Memory: <span class="gray">4 GB RAM</span></span><br>
+                    <span>Graphics: <span class="gray">Nvidia GTX 650</span></span><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <a href="#" class="endlogo">Pixel<span>Haven</span></a>
+            <p>&copy; ReineJahjah All Right Reserved</p>
+        </div>
+        
+        <script src="games.js"></script>
+    </body>
+</html>

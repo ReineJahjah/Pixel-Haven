@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PixelHaven|All Games</title>
+        <link rel="stylesheet" href="../navstyle.css">
+        <link rel="stylesheet" href="allgames.css">
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+        <link rel="shotcut icon" href="pics/icon.png" type="image/x-icon">
+    </head>
+    <body>
+        <nav>
+            <div class="menu">
+                <a href="../main.html"><img src="../pics/icon.png"></a>
+                <a href="../main.html" class="link"><p>Pixel<span>Haven</span></p></a>
+                 <span class="link2" onclick="clickedgames()">Games</span>
+                <a href="signin.html" class="link2">Signin</a>
+                <span class="link2" onclick="clickedmore3()">More</span>
+            </div>
+
+            <div class="clickedgames" id="clickedgames">
+                <div class="choice">
+                    <p><a href="../main.html">Home</a></p>
+                    
+                    <p><a href="#">All Games</a></p>
+                </div>
+            </div>
+            <div class="clickedmore3" id="clickedmore3">
+                <div class="choice">
+                    <p>Featured</p>
+                    <p>Wishlist</p>
+                    <p>News</p>
+                    <p>Stats</p>
+                </div>
+            </div>
+            
+            
+            <div class="icons">
+                <span class="notification"  onclick="clickedotification()">
+                    <i class="fi fi-rs-bell-notification-social-media" id="bell-icon"></i>
+                </span>
+                <span class="downloads" onclick="toggledownloads()">
+                    <i class="fi fi-rr-down-to-line" id="download-icon"></i>
+                </span>
+            </div>
+
+            <div class="clickednotification" id="clickednotification">
+                <div class="notification-box">
+                    <i class="fi fi-rr-check-circle"></i>
+                    <p>Congratulation, Your game download successfully.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class="fi fi-rs-circle-xmark"></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
+        </nav>
+        <div class="intro-img">
+            <img src="pics/wallpaper3.jpg">
+        </div>
+        <div class="intro">
+            <span>Let's Start Our Journey!</span>
+        </div>
+        <div class="games">
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/gta5(poster).jpg">
+                        <span>$14.98</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/gta5.html">
+                            <img src="posters/gta5.jpg">
+                            <h3>Grand Theft Auto V</h3>
+                            <abbr title="87% of the 1,761,766 user reviews
+        for this game are positive."><span>ALL REVIEWS: Very Positive (1,761,766)</span></abbr>
+                            <div class="desc">
+                                <span>Action</span>
+                                <span>Crime</span>
+                                <span>Open World</span>
+                                <span>Multiplayer</span>
+                                <span>Mature</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/amongus(poster).jpg">
+                        <span>$2.49</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/amongus.html">
+                            <img src="posters/amongus.jpg">
+                            <h3>Among Us</h3>
+                            <abbr title="92% of the 610,957 user reviews
+                            for this game are positive."><span>ALL REVIEWS: Very Positive (610,957)</span></abbr>
+                            <div class="desc">
+                                <span>Online Co-Op</span>
+                                <span>Social Deduction</span>
+                                <span>2D</span>
+                                <span>Multiplayer</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/warships(poster).jpg">
+                        <span>$30</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/warship.html">
+                            <img src="posters/warships.jpg">
+                            <h3>World of Warships</h3>
+                            <abbr title="77% of the 144,765 user reviews
+        for this game are positive."><span>ALL REVIEWS: Mostly Positive (144,765)</span></abbr>
+                            <div class="desc">
+                                <span>Naval Combat</span>
+                                <span>World War 2</span>
+                                <span>Naval</span>
+                                <span>Action</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/dota2(poster).webp">
+                        <span>$2.50</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/dota2.html">
+                            <img src="posters/dota2.jpg">
+                            <h3>Dota 2</h3>
+                            <abbr title="81% of the 2,404,286 user reviews
+        for this game are positive."><span>ALL REVIEWS: Very Positive (2,404,286)</span></abbr>
+                            <div class="desc">
+                                <span>Strategy</span>
+                                <span>PvP</span>
+                                <span>Moba</span>
+                                <span>Multiplayer</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/F1-22(poster).jpg">
+                        <span>$34.99</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/f1-22.html">
+                            <img src="posters/f1-22.jpg">
+                            <h3>F1 22</h3>
+                            <abbr title="68% of the 25,770 user reviews
+        for this game are positive."><span>ALL REVIEWS: Mixed (25,770)</span></abbr>
+                            <div class="desc">
+                                <span>Racing</span>
+                                <span>Sports</span>
+                                <span>Driving</span>
+                                <span>VR</span>
+                                <span>Immersive Sim</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/forzahorizon5(poster).webp">
+                        <span>$16.39</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/forzahorizon.html">
+                            <img src="posters/forzahorizon5.webp">
+                            <h3>Forza Horizon 5</h3>
+                            <abbr title="88% of the 189,705 user reviews
+        for this game are positive."><span>ALL REVIEWS: Very Positive (189,705)</span></abbr>
+                            <div class="desc">
+                                <span>Racing</span>
+                                <span>Open World</span>
+                                <span>Driving</span>
+                                <span>Multiplayer</span>
+                                <span>PvP</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/palworld(poster).jpg">
+                        <span>$11.24</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/palworld.html">
+                            <img src="posters/palworld.webp">
+                            <h3>Palworld</h3>
+                            <abbr title="94% of the 302,671 user reviews
+        for this game are positive."><span>ALL REVIEWS: Very Positive (302,671)</span></abbr>
+                            <div class="desc">
+                                <span>Survival</span>
+                                <span>Creature Collector</span>
+                                <span>Open World</span>
+                                <span>Crafting</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/portal2(poster).jpg">
+                        <span>$1.15</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/portal2.html">
+                            <img src="posters/portal2.jpg">
+                            <h3>Portal 2</h3>
+                            <abbr title="98% of the 346,501 user reviews
+        for this game are positive."><span>ALL REVIEWS: Very Positive (346,501)</span></abbr>
+                            <div class="desc">
+                                <span>Platformer</span>
+                                <span>Puzzle</span>
+                                <span>First-Person</span>
+                                <span>Dark Humor</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/pubg-battleground(poster).png">
+                        <span>$1.15</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/pubg.html">
+                            <img src="posters/pubg.jpg">
+                            <h3>PUBG: BATTLEGROUNDS</h3>
+                            <abbr title="59% of the 2,480,651 user reviews
+        for this game are positive."><span>ALL REVIEWS: Mixed (2,480,651)</span></abbr>
+                            <div class="desc">
+                                <span>Survival</span>
+                                <span>Shooter</span>
+                                <span>Battle Royale</span>
+                                <span>Multiplayer</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/ratchet-riftapart(poster).png">
+                        <span>$59.99</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/ratchet-riftapart.html">
+                            <img src="posters/ratchet-riftapart.jpg">
+                            <h3>Ratchet & Clank: Rift Apart</h3>
+                            <abbr title="89% of the 7,654 user reviews
+        for this game are positive."><span>ALL REVIEWS: Very Positive (7,654)</span></abbr>
+                            <div class="desc">
+                                <span>Adventure</span>
+                                <span>3D Platformer</span>
+                                <span>Single Player</span>
+                                <span>Action</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/squad(poster).webp">
+                        <span>$9.99</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/squad.html">
+                            <img src="posters/squad.jpg">
+                            <h3>Squad</h3>
+                            <abbr title="84% of the 146,470 user reviews
+        for this game are positive."><span>ALL REVIEWS: Very Positive (146,470)</span></abbr>
+                            <div class="desc">
+                                <span>Military</span>
+                                <span>Realistic</span>
+                                <span>FPS</span>
+                                <span>Multiplayer</span>
+                                <span>Tactical</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex-card">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="posters/super-people-2(poster).jpg">
+                        <span>$5</span>
+                    </div>
+                    <div class="card-back">
+                        <a href="game/super-people-2.html">
+                            <img src="posters/super-people-2.jpg">
+                            <h3>SUPER PEOPLE 2</h3>
+                            <abbr title="55% of the 16,410 user reviews
+        for this game are positive."><span>ALL REVIEWS: Mixed (16,410)</span></abbr>
+                            <div class="desc">
+                                <span>Early Access</span>
+                                <span>Tactical</span>
+                                <span>Battle Royale</span>
+                                <span>Shooter</span>
+                            </div>
+                            <div class="buy">
+                                <a href="buy/buy.html">
+                                    <i class="fi fi-ss-shopping-cart-add"></i>
+                                    <span>Buy</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="top">
+                <div class="first">
+                    <div class="logo">
+                        <img src="pics/icon.png">
+                        <h1>PixelHaven</h1>
+                    </div>
+                    <div class="about">
+                        <h3>About Us</h3>
+                        <span>
+                            we want to engage users with interactive game content,<br> 
+                            where they can play, compete, and improve their <br>
+                            scores.
+                        </span>
+                    </div>
+                    <div class="contact">
+                        <h4>Contact Us</h4>
+                        <i class="fi fi-rr-phone-call"></i>
+                        <a href="tel:+96176..">+961 76 62...</a>
+                        <br>
+                        <i class="fi fi-rr-envelope"></i>
+                        <a href="mailto:reinjahjah@gmail.com">reinejahjah@gmail.com</a>
+                    </div>
+                </div>
+                <div class="second">
+                    <h2>Information</h2><br>
+                    <span>About Us</span><br>
+                    <span>More Search</span><br>
+                    <span>Blog</span><br>
+                    <span>Events</span>
+                </div>
+                <div class="second">
+                    <h2>Helpful Links</h2><br>
+                    <span>Sevices</span><br>
+                    <span>Supports</span><br>
+                    <span>Terms & Condition</span><br>
+                    <span>Privacy Policy</span>
+                </div>
+                <div class="fourth">
+                    <h3>Subscribe For More Info</h3>
+                    <form>
+                        <input type="mail" placeholder="Enter Your Email">
+                        <br><input type="Submit" class="subm">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="bott">
+                <div class="social">
+                    <i class="fi fi-brands-facebook a"></i>
+                    <i class="fi fi-brands-twitter-alt b"></i>
+                    <i class="fi fi-brands-instagram c"></i>
+                    <i class="fi fi-brands-google d"></i>
+                </div>
+                <div class="copyright">
+                    <p>&copy;PixelHaven All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <script src="allgames.js"></script>
+
+    </body>
+</html>

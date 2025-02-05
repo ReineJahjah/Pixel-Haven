@@ -1,0 +1,213 @@
+*{
+    color: aliceblue;
+    background-color:rgb(33, 32, 32);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style:none;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../pics/among-us.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    margin:0;
+    height:100%;
+    z-index: -1;
+}
+
+.first{
+    background-color: transparent;
+    display:flex;
+    flex-direction:row;
+    height: 570px;
+    width:1100px;
+    margin-top:40px;
+}
+.first .left{
+    background-color: transparent;
+    height:570px;
+    width:750px;
+}
+
+.first .left h1{
+    background-color: transparent;
+    font-size: 50px;
+    padding-top:0px;
+    margin-top:15px;
+    margin-bottom: 5px;
+    margin-left:15px;
+    color:#bfc5cb;
+    cursor:cell;
+}
+.first .left video{
+    background-color: transparent;
+    height:400px;
+    width:740px;
+    margin:0px;
+    cursor: pointer;
+}
+.first .left a{
+    all:none;
+    background-color: transparent;
+}
+.first .left button{
+    background-color:#1b182b;
+    border-color:#fac915;
+    margin:5px;
+    padding:10px 15px;
+    border-radius:5px;
+    font-size:15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.first .left button:hover{
+    background-color:#fac915;
+    border-color:#1b182b;
+    margin:5px;
+    padding:10px 15px;
+    border-radius:5px;
+    font-size:15px;
+    color:#003f88;
+}
+.first .right{
+    height:500px;
+    width:350px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.right img{
+    height:200px;
+    width:350px;
+    margin-top:20px;
+}
+.right span{
+    color:#bfc5cb;
+    margin:10px 2px;
+}
+.right span .yellow{
+    color:#fac915;
+}
+.right button{
+    margin:9px 0 0 0px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #30343f;
+    padding:3px;
+}
+.right button:hover{
+    filter:brightness(1.5);
+}
+
+.description{
+    padding-left:15px;
+    height: auto;
+    width:1100px;
+    background-color: transparent;
+    cursor:default;
+}
+.description h1,.description h2{
+    background-color: transparent;
+    color:white;
+}
+.description hr{
+    width:600px;
+    margin-left:0px;
+    border-color: #fac915;
+}
+.description img{
+    height: 400px;
+    width:900px;
+    background-color: transparent;
+    margin:15px 0;
+}
+.description span, .description ul li{
+    color:#bfc5cb;
+    font-size: 20px;
+    background-color: transparent;
+}
+.description ul{
+    background-color: transparent;
+}
+.description ul li .fi{
+    
+    color:#fac915;
+}
+
+.req-box{
+    cursor: default;
+    padding-left:15px;
+    height: auto;
+    width:900px;
+    background-color: transparent;
+}
+.req-box h2{
+    background-color: transparent;
+}
+.req-box hr{
+    width: 320px;
+    border-color: #fac915;
+    margin-left:0px;
+}
+.req{
+    display:flex;
+    flex-direction: row;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+}
+.req .min{
+    margin-right:50px;
+    background-color: transparent;
+}
+.req .min span{
+    margin-bottom:0px;
+    color:#7d7f81;
+}
+.req .min span .gray{
+    color:#bfc5cb;
+}
+
+.req .rec{
+    margin-right:50px;
+    background-color: transparent;
+}
+.req .rec span{
+    margin-bottom:0px;
+    color:#7d7f81;
+    background-color: transparent;
+}
+.req .rec .gray{
+    color:#bfc5cb;
+}
+.req h3{
+    background-color: transparent;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent;
+}
+.copyright a{
+    all:unset;
+    cursor: pointer;
+    color:#fac915;
+    background-color: red;
+    border:1px solid #fac915;
+    border-radius: 7%;
+    margin-right: 980px;
+    padding: 5px 5px;
+    font-family:fantasy;
+}
+.copyright a span{
+    color:#1b182b;
+}
+.copyright p{
+    font-size: 0.9rem;
+    background-color: transparent;
+    cursor: pointer;
+}
